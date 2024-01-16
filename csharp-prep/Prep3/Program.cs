@@ -31,7 +31,7 @@ class Program
             }
 
             // If the guess is bigger than the number, print lower.
-            else if (guess > number)
+            else if (guess > n
             {
                 Console.WriteLine("Lower");
             }
