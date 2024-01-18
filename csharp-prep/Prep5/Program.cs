@@ -4,7 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Prep5 World!");
+        DisplayWelcome();
+        string userName = PromptUserName();
+        int userNumber = PromptUserNumber();
+        int squareNumber = SquareNumber(userNumber);
+        DisplayResult(userName, squareNumber);
+
     }
 
     static void DisplayWelcome()
@@ -33,10 +38,11 @@ class Program
         return squareNumber;
     }
 
-    static string DisplayResult(string name, int number)
+    static void DisplayResult(string name, int squaredNumber)
     {
-       string numString = 
-        string message = 
+        string numString = squaredNumber.ToString(); 
+        string message = name + ", the square of your number is " + numString + ".";
+        Console.WriteLine(message);
     }
 }
     
