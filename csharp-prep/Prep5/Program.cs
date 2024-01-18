@@ -14,10 +14,10 @@ class Program
         int userNumber = PromptUserNumber();
 
         //Square the user's favorite number.
-        int squareNumber = SquareNumber(userNumber);
+        int squaredNumber = SquareNumber(userNumber);
 
         //Display the final results.
-        DisplayResult(userName, squareNumber);
+        DisplayResult(userName, squaredNumber);
 
     }
 
@@ -32,6 +32,7 @@ class Program
         //Prompt user for their name and return it as a string.
         Console.Write("Please enter your name: ");
         string name = Console.ReadLine();
+
         return name;
     }
 
@@ -41,6 +42,7 @@ class Program
         Console.Write("Please enter your favorite number: ");
         string userNumber = Console.ReadLine();
         int number = int.Parse(userNumber);
+
         return number;
     }
 
@@ -48,6 +50,7 @@ class Program
     {
         //Square the user's number and return it as an int.
         int squareNumber = number * number;
+        
         return squareNumber;
     }
 
