@@ -1,0 +1,34 @@
+Class Diagrams
+
+    1.Name: Journal
+
+        Responsibilities: 
+
+
+        Attributes (member variables): 
+
+
+        Behaviors (methods): 
+
+
+    2. Name: Entry
+
+        Responsibilities: 
+
+
+        Attributes (member variables): 
+
+
+        Behaviors (methods): 
+
+
+
+Saving/Loading
+
+
+
+Prompt Generation
+
+
+
+
