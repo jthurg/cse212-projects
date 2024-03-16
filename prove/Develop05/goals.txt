@@ -1,0 +1,4 @@
+Points,720
+SimpleGoal:Speak,In Church,true,50
+EternalGoal:Temple,Attend it,false,20
+ChecklistGoal:Workout,with dad,true,10,500,3,3
