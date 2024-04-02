@@ -11,6 +11,17 @@ public class Razor : OffRoadVehicle
     }
 
     //Define methods.
-    //(n/a)########
-
+    public override void DisplayInfo()
+    {
+        //Display vehicle information depending on if it has a winch.
+        if (_hasWinch == true)
+        {
+            Console.Write($"{_year} {_color} {_make} {_model}, Rate: ${_rentalRate}/hour, Has Winch: Yes");
+        }
+        
+        else
+        {
+            Console.Write($"{_year} {_color} {_make} {_model}, Rate: ${_rentalRate}/hour, Has Winch: No");
+        }
+    }
 }

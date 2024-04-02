@@ -11,6 +11,9 @@ public class Boat : OffRoadVehicle
     }
 
     //Define methods.
-    //(n/a)########
-
+    public override void DisplayInfo()
+    {
+        //Display vehicle information including the boat type.
+        Console.Write($"{_year} {_color} {_make} {_model}, Rate: ${_rentalRate}/hour, Type: {_type}");
+    }
 }

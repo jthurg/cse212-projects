@@ -1,11 +1,12 @@
 public abstract class Vehicle
 {
     //Define member variables.
-    private string _year = "";
-    private string _color = "";
-    private string _make = "";
-    private string _model = "";
-    private int _rentalRate = 0;
+    protected string _year = "";
+    protected string _color = "";
+    protected string _make = "";
+    protected string _model = "";
+    protected int _rentalRate = 0;
+    protected string _isRented = "false";
 
     //Define constructor.
     public Vehicle(string year, string color, string make, string model, int rentalRate)
@@ -17,14 +18,26 @@ public abstract class Vehicle
         _rentalRate = rentalRate;
     }
 
-
     //Define methods.
-    public abstract void Rent();
-    public abstract int Return();
-    public abstract void DisplayInfo();
-    public int GetRentalRate()
+    public string GetRentalStatus()
     {
-        return _rentalRate;
+        //Return the rental status.
+        return _isRented;
     }
     
+    public void Rent()
+    {
+        //Set the rental status to true.
+        _isRented = "true";
+    }
+
+    public abstract int Return();
+
+    public abstract void DisplayInfo();
+
+    public int GetRentalRate()
+    {
+        //Return the rental rate.
+        return _rentalRate;
+    }
 }

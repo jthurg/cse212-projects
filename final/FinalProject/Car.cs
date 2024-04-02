@@ -9,8 +9,10 @@ public class Car : OnRoadVehicle
         _type = type;
     }
 
-
     //Define methods.
-    //(n/a)########
-
+    public override void DisplayInfo()
+    {
+        //Display vehicle information.
+        Console.Write($"{_year} {_color} {_make} {_model}, Rate: ${_rentalRate}/mile, Seats: {_seats}, Type: {_type}");
+    }
 }

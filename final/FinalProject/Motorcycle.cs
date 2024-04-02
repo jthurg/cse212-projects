@@ -9,8 +9,18 @@ public class Motorcycle : OnRoadVehicle
         _hasSideCar = hasSideCar;
     }
 
-
     //Define methods.
-    //(n/a)########
+    public override void DisplayInfo()
+    {
+        //Display vehicle information depending on if it has a sidecar.
+        if (_hasSideCar == true)
+        {
+            Console.Write($"{_year} {_color} {_make} {_model}, Rate: ${_rentalRate}/mile, Seats: {_seats}, Has Sidecar: Yes");
+        }
 
+        else
+        {
+            Console.Write($"{_year} {_color} {_make} {_model}, Rate: ${_rentalRate}/mile, Seats: {_seats}, Has Sidecar: No");
+        }
+    }
 }
