@@ -1,10 +1,1 @@
-# cse210-student-template
-Hi
-
-This repository contains the starter code for many different projects. They are arranged as follows:
-
-* `sandbox` - An empty project that you can use to play around with any concepts you like.
-* `csharp-prep` - Starter projects for each of the C# Prep assignments.
-* `prepare` - Starter projects for each of the preparation Learning Activities.
-* `prove` - Starter projects for each of the prove Developer projects.
-* `final` - Starter projects for final project.
+For my final project I chose to do the open-ended project. My project is a vehicle rental system. There are a few things you should know on how to operate it. First, the program works user inputs that only function with whole integers, so no fractions of decimals. Second, each vehicle can only be rented or returned once, so if you try to rent/return the same vehicle twice or more than once then it will only show up and do the calculations for 1 rental or 1 return of that vehicle type. Lastly, if you rent a vehicle it does not suddenly disappear from the list of vehicles you can rent since that list just displays the differenty "types" of vehicles you can rent.
